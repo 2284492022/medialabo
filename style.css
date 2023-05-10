@@ -7,3 +7,12 @@
 co#honbun > co {
     background-color: burlywood;
 }
+a:link {
+    color: blue;
+}
+a:visited {
+    color:brown;
+}
+a:hover {
+    text-decoration: none;
+}

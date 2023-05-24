@@ -46,7 +46,6 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log = (data.weather.description);
 let d1 = document.querySelector('t2#name');
 d1.textContent = data.name;
 let d2 = document.querySelector('p#temp_max');

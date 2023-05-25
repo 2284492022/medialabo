@@ -1,11 +1,14 @@
 body {
-    font-size: 300%;
+    font-size: 200%;
     color:rgb(236, 93, 22);
-    background-color:aqua;
+    background-color:aquamarine;
 }
 p {
-    background-color:rgb(230, 178, 149);
+    background-color:hsl(72, 62%, 73%);
 }
 t1 {
     font-weight: bold;
+}
+t2 {
+    color:darkorange;
 }

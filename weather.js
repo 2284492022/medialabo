@@ -46,12 +46,21 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
+let a = document.querySelector('button#search');
+a.addEventListener('click', result);
+
+function result() {
+  let s = document.querySelector('select#cty');
+  let num = s.selectedIndex;
+  let os = s.querySelectedAll('option');
+  let o = os.item(num);
+}
 let d1 = document.querySelector('t2#name');
 d1.textContent = data.name;
 let d2 = document.querySelector('p#temp_max');
-d2.textContent = data.main.temp_max;
+d2.textContent = '最高気温' + data.main.temp_max;
 let d3 = document.querySelector('p#temp_min');
-d3.textContent = data.main.temp_min;
+d3.textContent = '最低気温' + data.main.temp_min;
 /*let d4 = document.querySelector('p#weather.description');
 d4.textContent = data.weather.description;
 let d5 = document.querySelector('p#coord.lon');

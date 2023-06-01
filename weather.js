@@ -58,19 +58,20 @@ function result() {
 let d1 = document.querySelector('t2#name');
 d1.textContent = data.name;
 let d2 = document.querySelector('p#temp_max');
-d2.textContent = '最高気温' + data.main.temp_max;
+d2.textContent = '最高気温:' + data.main.temp_max;
 let d3 = document.querySelector('p#temp_min');
-d3.textContent = '最低気温' + data.main.temp_min;
-/*let d4 = document.querySelector('p#weather.description');
-d4.textContent = data.weather.description;
-let d5 = document.querySelector('p#coord.lon');
-d5.textContent = data.coord.lon;
-let d6 = document.querySelector('p#coord.lat');
-d6.textContent = data.coord.lat;
-let d7 = document.querySelector('p#wind.speed');
-d7.textContent = data.wind.speed;
-let d8 = document.querySelector('p#wind.deg');
-d8.textContent = data.wind.deg;
-let d9 = document.querySelector('p#main.humidity');
-d9.textContent = data.main.humidity;
-*/
+d3.textContent = '最低気温:' + data.main.temp_min;
+let d4 = document.querySelector('p#weather_description');
+for(let x of data.weather) {
+d4.textContent = '天気:' + x.description;
+}
+let d5 = document.querySelector('p#coord_lon');
+d5.textContent =  '緯度:' + data.coord.lon;
+let d6 = document.querySelector('p#coord_lat');
+d6.textContent = '経度:' + data.coord.lat;
+let d7 = document.querySelector('p#wind_speed');
+d7.textContent = '風速:' + data.wind.speed;
+let d8 = document.querySelector('p#wind_deg');
+d8.textContent = '風向き' + data.wind.deg;
+let d9 = document.querySelector('p#main_humidity');
+d9.textContent = '湿度:' + data.main.humidity;

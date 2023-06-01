@@ -22,6 +22,7 @@ function hantei() {
   a.textContent =  yoso;
   let r = document.querySelector('p#result');
   // 課題3-1: 正解判定する
+  if(0 <= yoso && yoso <= 10) {
   if(j <= 3) {
     if(yoso === kotae) {
       r.textContent = '正解です.おめでとう!';
@@ -41,10 +42,11 @@ function hantei() {
       j+=1;
     }
   } else {
-    r.textContent = "答えは" + kotae + "でした。すでにゲームは終わっています";
+    r.textContent = "答えは" + kotae + "でした.すでにゲームは終わっています";
     kaisu+=1;
     j += 1;
   }
+  }  
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
 }

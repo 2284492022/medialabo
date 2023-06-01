@@ -4,25 +4,35 @@
         <meta charset="utf-8">
         <title>検索結果</title>
         <link rel="stylesheet" href="projectt.css">
-        <script src="weather.js" defer></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+        <script src="projectt.js" defer></script>
     </head>
     <body>
-        <label for="cty">国の名前</label>
+        <label for="cty"></label>
         <select name="cty" id="cty">
-            <option value="china">北京</option>
+            <option value="ezi">エジプト</option>
+            <option value="russia">ロシア</option>
+            <option value="saf">南アフリカ</option>
+            <option value="china">中華人民共和国</option>
             <option value="jp">日本</option>
+            <option value="sngp">シンガポール</option>
+            <option value="au">オーストラリア</option>
+            <option value="eu">イギリス</option>
+            <option value="fr">フランス</option>
+            <option value="br">ブラジル</option>
+            <option value="us">アメリカ合衆国(ニューヨーク)</option>
+            <option value="uss">アメリカ合衆国(ロサンゼルス)</option>
         </select>
         <button id="search">検索</button>
-        <br><t1>検索結果</t1>
-        <br><br><t2 id ="name">名前</t2>
-        <br><br><p id="weather_description">t晴れ</p>
-        <p id="temp_max">t27</p>
-        <p id="temp_min">t21</p>
-        <p id="coord_lon">t51</p>
-        <p id="coord_lat">t50</p>
-        <p id="wind_speed">t7m   
-        <p id="wind_deg">tnorth</p>
-        <p id="main_humidity">t30</p>
+        <br><t1></t1>
+        <br><br><t2 id ="name"></t2>
+        <br><br><p id="weather_description"></p>
+        <p id="temp_max"></p>
+        <p id="temp_min"></p>
+        <p id="coord_lon"></p>
+        <p id="coord_lat"></p>
+        <p id="wind_speed">   
+        <p id="wind_deg"></p>
+        <p id="main_humidity"></p>
     </body>
 </html>
